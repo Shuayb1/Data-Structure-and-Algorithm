@@ -9,14 +9,14 @@ def do(me):
     for i in me:
         im = True
         for j in me:
-            if i>j:
+            if i > j:
                 im = False
         if im:
             myself = i
     return myself
 
 # o(n)
-def do(me):
+def do1(me):
     myself = me[0]
     for i in me:
         if i < myself:
@@ -24,7 +24,7 @@ def do(me):
     return myself
 
 
-print(do([3,4,2]))
+print(do1([3,4,2]))
 
 # O(nlogn)
 def analysis():
